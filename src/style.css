@@ -219,21 +219,6 @@ body {
   font-weight: 700;
 }
 
-/* .new-arrivals-section .new-arrivals-slider {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-} */
-
-.new-arrtivals-card {
-  /* width: 100%; */
-  /* width: fit-content; */
-}
-
-new-arrtivals-card img {
-  width: inherit !important;
-}
-
 .new-arrtivals-card h3 {
   color: #000;
   font-family: "Satoshi";
@@ -590,13 +575,17 @@ new-arrtivals-card img {
   display: none;
 }
 
-.glide__slide {
-  margin-right: 166px;
-  width: fit-content;
-}
+/* .glide__slide {
+  margin-right: 100px;
+} */
 
 .glide__slide:last-child {
   margin-right: 0;
+}
+
+.glide__slide {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
