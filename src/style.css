@@ -360,19 +360,6 @@ body {
   flex-shrink: 0;
 }
 
-.Customer-Stories-card {
-  width: 90%;
-  padding: 24px;
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 24px 342px;
-  flex-wrap: wrap;
-  margin: auto;
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .Customer-Stories-card-title {
   display: flex;
 }
@@ -612,6 +599,32 @@ body {
 .new-arrtivals-card-width {
   width: 100%;
   margin-left: 10px;
+}
+
+.Customer-Stories-card {
+  width: 90%;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px 342px;
+  flex-wrap: wrap;
+  margin: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#glide3 .glide__track .Customer-Stories-card_contaner .Customer-Stories-card {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px 342px;
+  padding: 24px !important;
+  width: 500px !important;
+  margin: 0 auto !important;
+  margin: auto;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {

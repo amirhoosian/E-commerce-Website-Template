@@ -310,63 +310,66 @@
             <img src="/arrow-down-bold1.svg" alt="" />
           </div>
         </div>
+        <div id="glide3" class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="Customer-Stories-card_contaner glide__slides">
+              <div class="Customer-Stories-card glide__slide">
+                <div class="Customer-Stories-card-Star-box">
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                </div>
+                <div class="Customer-Stories-card-title">
+                  <h3>Sarah M.</h3>
+                  <img src="/Frame.svg" alt="" />
+                </div>
+                <p>
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
 
-        <div class="Customer-Stories-card_contaner">
-          <div class="Customer-Stories-card">
-            <div class="Customer-Stories-card-Star-box">
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-            </div>
-            <div class="Customer-Stories-card-title">
-              <h3>Sarah M.</h3>
-              <img src="/Frame.svg" alt="" />
-            </div>
-            <p>
-              "I'm blown away by the quality and style of the clothes I received
-              from Shop.co. From casual wear to elegant dresses, every piece
-              I've bought has exceeded my expectations.”
-            </p>
-          </div>
+              <div class="Customer-Stories-card glide__slide">
+                <div class="Customer-Stories-card-Star-box">
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                </div>
+                <div class="Customer-Stories-card-title">
+                  <h3>Sarah M.</h3>
+                  <img src="/Frame.svg" alt="" />
+                </div>
+                <p>
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
 
-          <div class="Customer-Stories-card card-items">
-            <div class="Customer-Stories-card-Star-box">
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
+              <div class="Customer-Stories-card glide__slide">
+                <div class="Customer-Stories-card-Star-box">
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                  <img src="/Star 1.png" alt="" />
+                </div>
+                <div class="Customer-Stories-card-title">
+                  <h3>Sarah M.</h3>
+                  <img src="/Frame.svg" alt="" />
+                </div>
+                <p>
+                  "I'm blown away by the quality and style of the clothes I
+                  received from Shop.co. From casual wear to elegant dresses,
+                  every piece I've bought has exceeded my expectations.”
+                </p>
+              </div>
             </div>
-            <div class="Customer-Stories-card-title">
-              <h3>Sarah M.</h3>
-              <img src="/Frame.svg" alt="" />
-            </div>
-            <p>
-              "I'm blown away by the quality and style of the clothes I received
-              from Shop.co. From casual wear to elegant dresses, every piece
-              I've bought has exceeded my expectations.”
-            </p>
-          </div>
-
-          <div class="Customer-Stories-card card-items">
-            <div class="Customer-Stories-card-Star-box">
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-              <img src="/Star 1.png" alt="" />
-            </div>
-            <div class="Customer-Stories-card-title">
-              <h3>Sarah M.</h3>
-              <img src="/Frame.svg" alt="" />
-            </div>
-            <p>
-              "I'm blown away by the quality and style of the clothes I received
-              from Shop.co. From casual wear to elegant dresses, every piece
-              I've bought has exceeded my expectations.”
-            </p>
           </div>
         </div>
       </div>
@@ -487,9 +490,22 @@
         },
       };
 
+      const glideOptions2 = {
+        type: "carousel",
+        startAt: 0,
+        perView: 4,
+        gap: 10,
+        focusAt: "center",
+        breakpoints: {
+          600: { perView: 1 },
+          1200: { perView: 3 },
+        },
+      };
+
       new Glide("#glide1", glideOptions).mount();
 
       new Glide("#glide2", glideOptions1).mount();
+      new Glide("#glide3", glideOptions2).mount();
     </script>
   </body>
 </html>
