@@ -877,4 +877,8 @@ body {
     width: 218px;
     margin: auto;
   }
+
+  #glide3 .glide__track .Customer-Stories-card_contaner .Customer-Stories-card {
+    width: 400px !important;
+  }
 }
