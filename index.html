@@ -107,7 +107,9 @@
             <div class="glide__slides">
               <div class="glide__slide">
                 <div class="new-arrtivals-card">
-                  <img src="/image7.png" alt="" />
+                  <div class="image-container">
+                    <img src="/image7.png" alt="" />
+                  </div>
                   <h3>T-SHIRT WITH TAPE DETAILS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -124,7 +126,9 @@
               </div>
               <div class="glide__slide">
                 <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
+                  <div class="image-container">
+                    <img src="/image8.png" alt="" />
+                  </div>
                   <h3>SKINNY FIT JEANS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -144,7 +148,9 @@
               </div>
               <div class="glide__slide">
                 <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
+                  <div class="image-container">
+                    <img src="/image8.png" alt="" />
+                  </div>
                   <h3>SKINNY FIT JEANS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -164,7 +170,9 @@
               </div>
               <div class="glide__slide">
                 <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
+                  <div class="image-container">
+                    <img src="/image8.png" alt="" />
+                  </div>
                   <h3>SKINNY FIT JEANS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -182,11 +190,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <div data-glide-el="controls">
-                <button data-glide-dir="<<">Start</button>
-                <button data-glide-dir=">>">End</button>
-              </div> -->
             </div>
           </div>
         </div>
@@ -201,8 +204,10 @@
           <div class="glide__track" data-glide-el="track">
             <div class="glide__slides">
               <div class="glide__slide">
-                <div class="new-arrtivals-card">
-                  <img src="/image7.png" alt="" />
+                <div class="new-arrtivals-card new-arrtivals-card-width">
+                  <div class="image-container">
+                    <img src="/image-7.png" alt="" />
+                  </div>
                   <h3>T-SHIRT WITH TAPE DETAILS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -218,8 +223,10 @@
                 </div>
               </div>
               <div class="glide__slide">
-                <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
+                <div class="new-arrtivals-card new-arrtivals-card-width">
+                  <div class="image-container">
+                    <img src="/img-61.png" alt="" />
+                  </div>
                   <h3>SKINNY FIT JEANS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -237,10 +244,13 @@
                   </div>
                 </div>
               </div>
+
               <div class="glide__slide">
-                <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
-                  <h3>SKINNY FIT JEANS</h3>
+                <div class="new-arrtivals-card new-arrtivals-card-width">
+                  <div class="image-container">
+                    <img src="/image-7.png" alt="" />
+                  </div>
+                  <h3>T-SHIRT WITH TAPE DETAILS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
                     <img src="/Star 1.png" alt="" />
@@ -249,17 +259,16 @@
                     <img src="/Star 1.png" alt="" />
                     <p>4.5/<span>5</span></p>
                   </div>
-
                   <div class="mony-box">
                     <h2>$120</h2>
-                    <h3 class="discount">$160</h3>
-                    <p>-30%</p>
                   </div>
                 </div>
               </div>
               <div class="glide__slide">
-                <div class="new-arrtivals-card">
-                  <img src="/image8.png" alt="" />
+                <div class="new-arrtivals-card new-arrtivals-card-width">
+                  <div class="image-container">
+                    <img src="/img-61.png" alt="" />
+                  </div>
                   <h3>SKINNY FIT JEANS</h3>
                   <div class="star-box">
                     <img src="/Star 1.png" alt="" />
@@ -455,6 +464,21 @@
         type: "carousel",
         startAt: 0,
         perView: 4,
+
+        gap: 200,
+        breakpoints: {
+          600: { perView: 2 },
+          1200: { perView: 3 },
+          1400: { perView: 4 },
+          1500: { perView: 4 },
+        },
+      };
+
+      const glideOptions1 = {
+        type: "carousel",
+        startAt: 0,
+        perView: 4,
+        gap: 10,
         breakpoints: {
           600: { perView: 2 },
           1200: { perView: 3 },
@@ -465,7 +489,7 @@
 
       new Glide("#glide1", glideOptions).mount();
 
-      new Glide("#glide2", glideOptions).mount();
+      new Glide("#glide2", glideOptions1).mount();
     </script>
   </body>
 </html>
